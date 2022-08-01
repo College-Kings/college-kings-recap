@@ -17,27 +17,27 @@ label recap_start:
     scene recap01_01  # TPP Establishing shot of SVC campus exterior 
     with dissolve
     
-    narrator "I still remember my first day at San Vallejo College."
+    "I still remember my first day at San Vallejo College."
 
     scene recap01_01a # new kid
     with dissolve
 
-    narrator "Young and naive, I had no idea how my life was about to change."
+    "Young and naive, I had no idea how my life was about to change."
 
     scene recap01_01b # TPP MC walking through the front doors of the college
     with dissolve
 
-    narrator "All the girls..."
+    "All the girls..."
 
     scene recap01_01c
     with dissolve
 
-    narrator "the parties... "
+    "the parties... "
     
     scene recap01_01e 
     with dissolve
         
-    narrator "the fights... " 
+    "the fights... " 
     
     scene recap01_01f
     with dissolve
@@ -47,7 +47,7 @@ label recap_start:
     $ name = renpy.input("What's your name?", default=("Alex").strip())
     $ name = name.strip()
 
-    narrator "All of the sudden, I could be whoever I wanted to be..."
+    "All of the sudden, I could be whoever I wanted to be..."
 
 label test_rep_screen:    
 

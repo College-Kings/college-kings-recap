@@ -1,7 +1,7 @@
 screen recap_rep_selection_screen():
     modal True
 
-    default recap_ui_path = "images/recap/ui/"
+    default recap_ui_path = "recap/images/ui/"
 
     add recap_ui_path + "recap_rep_selection_bg.webp"
 
@@ -42,7 +42,7 @@ screen recap_rep_selection_screen():
 screen recap_frat_selection_screen():
     modal True
 
-    default recap_ui_path = "images/recap/ui/"
+    default recap_ui_path = "recap/images/ui/"
 
     add recap_ui_path + "recap_frat_selection_bg.webp"
 
@@ -98,7 +98,7 @@ screen recap_girl_overview_screen():
     # Jump actions for each
     modal True
 
-    default recap_ui_path = "images/recap/ui/"
+    default recap_ui_path = "recap/images/ui/"
     default idle_image = ""
     default hover_image = ""
 
@@ -243,8 +243,8 @@ screen recap_girl_summary(girl_name):
     modal True
     style_prefix "recap"
 
-    default recap_image_path = "images/recap/girls/"
-    default recap_ui_path = "images/recap/ui/" 
+    default recap_image_path = "recap/images/girls/"
+    default recap_ui_path = "recap/images/ui/"
 
     default girl_info = {
         "penelope": {
