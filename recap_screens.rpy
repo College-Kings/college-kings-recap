@@ -73,7 +73,7 @@ screen recap_frat_selection_screen():
         pos (1215, 727)
         background Frame(recap_ui_path + "trans_bg.webp")
 
-        text "Honor, loyalty and brotherhood, Wolves bring a touch of chivalry to the world and look out for one another. Pledging to the Wolves means having the determination to be your best self and always having your frat brother’s back.":
+        text "Honor, loyalty and brotherhood, Wolves bring a touch of chivalry to the world and look out for one another. Pledging to the Wolves means having the determination to be your best self and always having your frat brother's back.":
             style "effra_regular_23"
             text_align 0.5
             align (0.5, 0.5)
