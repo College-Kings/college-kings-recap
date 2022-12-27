@@ -309,12 +309,7 @@ label recap_lauren_questions:
     
     call screen recap_girl_summary("lauren")
 
-    if _return == "Be friends":
-        # set variables here
-        # lauren friends
-        pass
-
-    else: #  Pursue a relationship
+    if _return != "Be friends": #  Pursue a relationship
         $ lauren.relationship = Relationship.GIRLFRIEND
 
         scene recap02_04  # s87c
