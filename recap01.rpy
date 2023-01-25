@@ -51,8 +51,7 @@ label recap_start:
 
 label test_rep_screen:    
 
-    scene black
-    with None        
+    scene black    
 
     # set reputation using the screen 
     call screen recap_rep_selection_screen()
@@ -173,7 +172,6 @@ label test_rep_screen:
 label test_frat_selection:
         
     scene black
-    with None
     
     call screen recap_frat_selection_screen()
         

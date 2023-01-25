@@ -37,7 +37,6 @@ label recap_emily_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("emily")
 
@@ -192,7 +191,6 @@ label recap_aubrey_questions:
     hide screen phone_icon
 
     scene black
-    with None
     
     call screen recap_girl_summary("aubrey")
 
@@ -305,7 +303,6 @@ label recap_lauren_questions:
     hide screen phone_icon
     
     scene black
-    with None
     
     call screen recap_girl_summary("lauren")
 
@@ -523,7 +520,6 @@ label recap_autumn_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("autumn")
 
@@ -556,7 +552,6 @@ label recap_autumn_questions:
         u "Who's got time to waste on girls that require this much effort? I'll move on quickly, thanks!"
     
     scene black
-    with None
 
     if not recap_first_run:
         jump recap_girl_overview
@@ -566,7 +561,6 @@ label recap_riley_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("riley")
 
@@ -699,7 +693,6 @@ label recap_nora_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("nora")
 
@@ -930,7 +923,6 @@ label recap_ms_rose_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("ms_rose")
 
@@ -1289,7 +1281,6 @@ label recap_penelope_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("penelope")
 
@@ -1489,7 +1480,6 @@ label recap_amber_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("amber")
 
@@ -1601,7 +1591,6 @@ label recap_samantha_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("samantha")
 
@@ -1793,7 +1782,6 @@ label recap_lindsey_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("lindsey")
 
@@ -1928,7 +1916,6 @@ label recap_jenny_questions:
     hide screen phone_icon
 
     scene black
-    with None
 
     call screen recap_girl_summary("jenny")
 
@@ -1945,7 +1932,6 @@ label recap_girl_overview:
     hide screen phone_icon
 
     scene black
-    with None
     
     call screen recap_girl_overview_screen()
     
