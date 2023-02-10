@@ -307,7 +307,7 @@ label recap_lauren_questions:
     call screen recap_girl_summary("lauren")
 
     if _return != "Be friends": #  Pursue a relationship
-        $ NPC.set_relationship(lauren, Relationship.GIRLFRIEND, mc)
+        $ CharacterService.set_relationship(lauren, Relationship.GIRLFRIEND, mc)
 
         scene recap02_04  # s87c
         with dissolve
@@ -385,7 +385,7 @@ label recap_lauren_questions:
 
                 u "I knew she was the right girl for me."
         
-        if NPC.is_fwb(aubrey, mc):
+        if CharacterService.is_fwb(aubrey, mc):
             scene recap02_04k  # v11aub25
             with dissolve
 
@@ -633,7 +633,7 @@ label recap_riley_questions:
                     else:
                         jump recap_nora_questions                                
     
-        if NPC.is_fwb(aubrey, mc):
+        if CharacterService.is_fwb(aubrey, mc):
             # Three some question
             
             scene recap02_06h    # v13s33_8
@@ -1231,7 +1231,7 @@ label recap_chloe_questions:
 
     menu:
         "Ask to be girlfriend":
-            $ NPC.set_relationship(chloe, Relationship.GIRLFRIEND, mc)
+            $ CharacterService.set_relationship(chloe, Relationship.GIRLFRIEND, mc)
 
             scene recap02_10y    # v11cd31c
             with dissolve
