@@ -340,10 +340,8 @@ label recap_lauren_questions:
         menu:
 
             "Push for more":
-                # set variables here
-                # laruen friend here
                 $ v0_lauren_too_far = True
-                $ lauren.relationship = Relationship.FRIEND
+                $ CharacterService.set_relationship(lauren, Relationship.FRIEND, mc)
 
                 scene recap02_04f  # v3 s291b
                 with dissolve
@@ -411,7 +409,7 @@ label recap_lauren_questions:
                     # Set variables here                   
                     $ viewed_scenes.add("v11_aubrey")
                     $ v0_lauren_caught_aubrey = True
-                    $ lauren.relationship = Relationship.FRIEND
+                    $ CharacterService.set_relationship(lauren, Relationship.FRIEND, mc)
 
                     scene recap02_04o  # v11aub9
                     with dissolve
@@ -606,7 +604,7 @@ label recap_riley_questions:
         menu:
             "Let be friends":
                 # set variables here 
-                $ riley.relationship = Relationship.FRIEND
+                $ CharacterService.set_relationship(riley, Relationship.FRIEND, mc)
 
                 scene recap02_06g    # v11ras6
                 with dissolve
@@ -1177,7 +1175,6 @@ label recap_chloe_questions:
 
             # KCT Check 
             if reputation() == Reputations.POPULAR:
-                # set variables here
                 # chloe rs here 
 
                 scene recap02_10q    # v6 sfr3cl4a
@@ -1196,8 +1193,7 @@ label recap_chloe_questions:
                 u "because Chloe really does have a bad temper when she's pissed!"                                
 
             else: # not popular       
-                # Set variables here
-                $ chloe.relationship = Relationship.FRIEND 
+                $ CharacterService.set_relationship(chloe, Relationship.FRIEND, mc)
 
                 scene recap02_10t    # v10such4d
                 with dissolve
