@@ -385,7 +385,7 @@ label recap_lauren_questions:
 
                 u "I knew she was the right girl for me."
         
-        if NPC.is_fwb(aubrey, mc):
+        if aubrey.relationship == Relationship.FWB:
             scene recap02_04k  # v11aub25
             with dissolve
 
@@ -633,7 +633,7 @@ label recap_riley_questions:
                     else:
                         jump recap_nora_questions                                
     
-        if NPC.is_fwb(aubrey, mc):
+        if aubrey.relationship == Relationship.FWB:
             # Three some question
             
             scene recap02_06h    # v13s33_8
