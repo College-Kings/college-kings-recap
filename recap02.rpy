@@ -307,7 +307,7 @@ label recap_lauren_questions:
     call screen recap_girl_summary("lauren")
 
     if _return != "Be friends": #  Pursue a relationship
-        $ lauren.relationship = Relationship.GIRLFRIEND
+        $ NPC.set_relationship(lauren, Relationship.GIRLFRIEND, mc)
 
         scene recap02_04  # s87c
         with dissolve
@@ -1231,9 +1231,7 @@ label recap_chloe_questions:
 
     menu:
         "Ask to be girlfriend":
-            # set variables here
-            # Chloe gf here
-            $ chloe.relationship = Relationship.GIRLFRIEND
+            $ NPC.set_relationship(chloe, Relationship.GIRLFRIEND, mc)
 
             scene recap02_10y    # v11cd31c
             with dissolve
