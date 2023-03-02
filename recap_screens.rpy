@@ -11,7 +11,7 @@ screen recap_rep_selection_screen():
         hover_background recap_ui_path + "pink_hover.webp"
         pos (190, 785)
         xysize (392, 114)
-        action [SetField(reputation, "components", {Reputations.BRO: 20, Reputations.BOYFRIEND: 20, Reputations.TROUBLEMAKER: 10}), Return()]
+        action [SetField(reputation, "components", {RepComponent.BRO: 20, RepComponent.BOYFRIEND: 20, RepComponent.TROUBLEMAKER: 10}), Return()]
 
         text "Pick" style "bebas_neue_30" align(0.5, 0.5)
 
@@ -21,7 +21,7 @@ screen recap_rep_selection_screen():
         hover_background recap_ui_path + "yellow_hover.webp"
         pos (760, 785)
         xysize (396, 115)
-        action [SetField(reputation, "components", {Reputations.BRO: 20, Reputations.BOYFRIEND: 10, Reputations.TROUBLEMAKER: 20}), Return()]
+        action [SetField(reputation, "components", {RepComponent.BRO: 20, RepComponent.BOYFRIEND: 10, RepComponent.TROUBLEMAKER: 20}), Return()]
 
         text "Pick" style "bebas_neue_30" align(0.5, 0.5)
 
@@ -32,7 +32,7 @@ screen recap_rep_selection_screen():
         hover_background recap_ui_path + "blue_hover.webp"
         pos (1320, 745)
         xysize (480, 200)
-        action [SetField(reputation, "components", {Reputations.BRO: 10, Reputations.BOYFRIEND: 20, Reputations.TROUBLEMAKER: 20}), Return()]
+        action [SetField(reputation, "components", {RepComponent.BRO: 10, RepComponent.BOYFRIEND: 20, RepComponent.TROUBLEMAKER: 20}), Return()]
 
         text "Pick" style "bebas_neue_30" align(0.5, 0.5)
 
