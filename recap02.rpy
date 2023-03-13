@@ -1702,7 +1702,7 @@ label recap_samantha_questions:
         
         "Pursue a relationship":
             # set variables here
-            $ samantha.relationship = Relationship.MOVE 
+            $ v1s53_kissed_samantha = True
 
             scene recap02_14i     # v9s24 v9wws3
             with dissolve
