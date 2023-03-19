@@ -78,7 +78,7 @@ label recap_emily_questions:
             "Start having sex again":
                 # Set variables for this decision here
                 # Emily RS here
-                $ emily.relationship = Relationship.FWB                
+                $ CharacterService.set_relationship(emily, Relationship.FWB, mc)                
 
                 hide screen phone_icon
 
@@ -216,7 +216,7 @@ label recap_aubrey_questions:
     else: # Have Sex
         # set variables here
         $ viewed_scenes.add("v11_aubrey")
-        $ aubrey.relationship = Relationship.FWB
+        $ CharacterService.set_relationship(Aubrey, Relationship.FWB, mc)
 
         scene recap02_09b    # v3 anew8
         with dissolve        
@@ -618,7 +618,7 @@ label recap_riley_questions:
 
             "Contnue relationship":
                 # set variables here
-                $ riley.relationship = Relationship.FWB 
+                $ CharacterService.set_relationship(riley, Relationship.FWB, mc)
 
                 scene recap02_06f
                 #with dissolve
@@ -870,7 +870,7 @@ label recap_nora_questions:
         "Kiss her":
             # set variables here
             # Nora rs here
-            $ nora.relationship = Relationship.FWB
+            $ CharacterService.set_relationship(nora, Relationship.FWB, mc)
 
             scene recap02_07x    # v12nos2
             with dissolve
@@ -995,7 +995,7 @@ label recap_ms_rose_questions:
                     
                     "Kiss her again":
                         # set variables here
-                        $ ms_rose.relationship = Relationship.FWB
+                        $ CharacterService.set_relationship(ms_rose, Relationship.FWB, mc)
                         $ viewed_scenes.add("v12_rose")
 
                         scene recap02_03h # v11roc6  Ms Rose and MC kissing in hallway with tongue
@@ -1077,7 +1077,7 @@ label recap_chloe_questions:
     else: # Pursue a relationship
         # set variables here
         $ v0_hc_girl = "chloe"
-        $ chloe.relationship = Relationship.FWB        
+        $ CharacterService.set_relationship(chloe, Relationship.FWB, mc)       
         
         scene recap02_10b    # v3 s204
         with dissolve
@@ -1410,7 +1410,7 @@ label recap_penelope_questions:
             # Penelope rs here 
             $ v0_pen_goes_europe = True
             $ v0s23_penelope_date = True
-            $ penelope.relationship = Relationship.LIKES
+            $ CharacterService.set_relationship(penelope, Relationship.LIKES, mc)
 
             scene recap02_12q   
             with dissolve
@@ -1491,7 +1491,7 @@ label recap_amber_questions:
     if reputation() == Reputations.POPULAR:
         # set variables here
         # amber RS here
-        $ amber.relationship = Relationship.FWB 
+        $ CharacterService.set_relationship(amber, Relationship.FWB, mc)
 
         scene recap02_13   # jomon4
         with dissolve
@@ -1696,7 +1696,7 @@ label recap_samantha_questions:
         
         "Pursue a relationship":
             # set variables here
-            $ samantha.relationship = Relationship.MOVE 
+            $ CharacterService.set_relationship(samantha, Relationship.MOVE, mc)
 
             scene recap02_14i     # v9s24 v9wws3
             with dissolve
@@ -1804,7 +1804,7 @@ label recap_lindsey_questions:
 
         "Kiss her":
             # set variables here
-            $ lindsey.relationship = Relationship.KISS
+            $ CharacterService.set_relationship(lindsey, Relationship.KISS, mc)
 
             scene recap02_15b    # v9s39 v9linksStart
             with dissolve
@@ -1860,7 +1860,7 @@ label recap_lindsey_questions:
         "Take things further":
             # set variables here
             # lindsey rs here
-            $ lindsey.relationship = Relationship.FWB
+            $ CharacterService.set_relationship(lindsey, Relationship.FWB, mc)
 
             scene recap02_15i    # v12esr35
             with dissolve
