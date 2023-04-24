@@ -216,7 +216,7 @@ label recap_aubrey_questions:
     else: # Have Sex
         # set variables here
         $ viewed_scenes.add("v11_aubrey")
-        $ CharacterService.set_relationship(Aubrey, Relationship.FWB)
+        $ CharacterService.set_relationship(aubrey, Relationship.FWB)
 
         scene recap02_09b    # v3 anew8
         with dissolve        
