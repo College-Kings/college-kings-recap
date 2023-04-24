@@ -383,7 +383,7 @@ label recap_lauren_questions:
 
                 u "I knew she was the right girl for me."
         
-        if CharacterService.is_fwb(aubrey, mc):
+        if CharacterService.is_fwb(aubrey):
             scene recap02_04k  # v11aub25
             with dissolve
 
