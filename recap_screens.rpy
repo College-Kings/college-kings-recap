@@ -535,7 +535,7 @@ screen recap_girl_summary(girl_name):
             pos (933, 867)
             xysize (480, 200)
 
-            text girl["right_btn"]:            
+            text girl["right_btn"]:
                 style "recap_button_text"
                 align (0.5, 0.5)
 
