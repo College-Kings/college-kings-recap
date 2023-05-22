@@ -326,7 +326,7 @@ screen recap_girl_summary(girl_name):
         "riley": {
             "ui_name": "Riley",
             "xpos": 165,
-            "summary": "Like Lauren, Riley has been in my life since my very first day on campus. She always seemed to be the girl making herself available for a chat, and was clearly someone I could dependent on, as well as fun to be around.",
+            "summary": "Like Lauren, Riley has been in my life since my very first day on campus. She always seemed to be the girl making herself available for a chat, and was clearly someone I could depend on, as well as fun to be around.",
             "birthday": "June 1",
             "eyes": "Brown",
             "hair": "Red",
