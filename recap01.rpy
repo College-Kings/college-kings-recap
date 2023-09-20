@@ -48,8 +48,6 @@ label recap_start:
 
     "All of the sudden, I could be whoever I wanted to be..."
 
-label test_rep_screen:    
-
     scene black    
 
     # set reputation using the screen 
@@ -167,8 +165,6 @@ label test_rep_screen:
     with dissolve    
 
     u "Ryan wanted me to join the Apes"
-
-label test_frat_selection:
         
     scene black
     
