@@ -1077,7 +1077,7 @@ label recap_chloe_questions:
     else: # Pursue a relationship
         # set variables here
         $ v0_hc_girl = "chloe"
-        $ CharacterService.set_relationship(chloe, Relationship.FWB)       
+        $ CharacterService.set_relationship(chloe, Relationship.GIRLFRIEND)       
         
         scene recap02_10b    # v3 s204
         with dissolve
