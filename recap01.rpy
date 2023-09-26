@@ -10,13 +10,13 @@
 #
 
 label recap_start:
-    
+
     hide screen phone_icon
     # r1
- 
+
     scene recap01_01  # TPP Establishing shot of SVC campus exterior 
     with dissolve
-    
+
     "I still remember my first day at San Vallejo College."
 
     scene recap01_01a # new kid
@@ -33,12 +33,12 @@ label recap_start:
     with dissolve
 
     "the parties... "
-    
+
     scene recap01_01e 
     with dissolve
-        
+
     "the fights... " 
-    
+
     scene recap01_01f
     with dissolve
     # r2 
@@ -86,14 +86,14 @@ label recap_start:
 
     scene black
     with dissolve
-    
+
     u "And there were the girls of course."
 
     scene recap01_05 # TPP or wide FPP image Lauren
     with dissolve
 
     u "Lauren..."
-    
+
     scene recap01_5a #  Pic of riley
     with dissolve
 
@@ -165,11 +165,11 @@ label recap_start:
     with dissolve    
 
     u "Ryan wanted me to join the Apes"
-        
+
     scene black
-    
+
     call screen recap_frat_selection_screen()
-        
+
     if _return == "apes":
         $ mc.frat = Frat.APES
     else:
@@ -178,10 +178,10 @@ label recap_start:
     # R7 
 
     if mc.frat == Frat.APES:
-        
+
         scene recap01_07 # TPP image MC making his frat choice [APES]            
         with dissolve
-    
+
         u "After making my choice..."
 
         scene recap01_07b # TPP MC during initiation [APES]
@@ -190,26 +190,26 @@ label recap_start:
         u "I passed my initiation by showing my loyaly to the frat and my new brothers..."
 
         pause 1.25
-        
+
         scene recap01_07d # TPP image show MC wearing his APES jacket
         with dissolve
 
         pause 1.25
-        
+
         scene recap01_07f # TPP image MC moving into his frat room [APES]
         with dissolve
-            
+
         u "and moved into the frat house."
-    
+
     else: 
 
         scene recap01_07a # TPP MC mkaing his frat choice [WOLVES]
         with dissolve
-        
+
         u "After making my choice..."
 
         scene recap01_07c # TPP MC during intiiation [WOLVES] 
-        
+
         u "I passed my initiation by showing my loyaly to the frat and my new brothers..."
 
         pause 1.25
@@ -221,7 +221,7 @@ label recap_start:
 
         scene recap01_07g # TPP MC moving into his frat room [WOLVES]
         with dissolve
-        
+
         u "and moved into the frat house."
 
 
@@ -241,7 +241,7 @@ label recap_start:
     with dissolve
 
     pause 1.25
-    
+
     scene recap01_08c # TPP of Riley's first kiss with MC
     with dissolve
 
@@ -256,7 +256,7 @@ label recap_start:
     with dissolve
 
     u "but this became quite tricky as going for one girl..."
-    
+
     scene recap01_09f: # TPP Scrolling view of Chloe after homecoming naked 
         subpixel True
         yalign 1.0

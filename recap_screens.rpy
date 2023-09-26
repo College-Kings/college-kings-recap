@@ -445,7 +445,7 @@ screen recap_girl_summary(girl_name):
             "right_btn": None,
         }
     }
-    
+
     $ girl = girl_info[girl_name]
 
     # background image load
@@ -471,7 +471,7 @@ screen recap_girl_summary(girl_name):
                 text girl_info[girl_name]["summary"] + girl_info[girl_name]["ape_summary"]
             else:
                 text girl_info[girl_name]["summary"]
-        
+
         # special handling for Samantha narraitive
         elif girl_name == "samantha":
             if mc.frat == Frat.APES:

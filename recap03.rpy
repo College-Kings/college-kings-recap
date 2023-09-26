@@ -10,14 +10,14 @@
 #
 
 label recap_end:
-    
+
     hide screen phone_icon
 
     if not is_CK2:  # CK1 
 
         scene recap03_01 #v11amp7.webp
         with dissolve             
-        
+
         u "In just a couple of days, we were flying out to Europe!"
 
         scene recap03_02 #v11bb5.webp
@@ -34,14 +34,14 @@ label recap_end:
 
         scene recap03_01 #v11amp7.webp
         with dissolve
-        
+
         u "While we were in Europe..."
 
         scene recap03_04 #v11lip1.webp
         with dissolve
 
         pause 1.5
-        
+
         scene recap03_04a #v11lip2.webp
         with dissolve
 
@@ -69,7 +69,7 @@ label recap_end:
 
         scene recap03_08 #v13s12a_7.webp
         with dissolve
-        
+
         u "There was also time to see the international superstar singer Polly in concert."
 
         scene recap03_09 #aub_pen_recap_screen.webp - split scene image of Aubrey on one side and Penelope on the other smiling 
@@ -80,14 +80,14 @@ label recap_end:
             "Take Aubrey":
                 $ v0_penelope_concert = False
                 $ v0_aubrey_concert = True
-                
+
                 scene recap03_10 #v13s12a_6o.webp
                 with dissolve                
-            
+
             "Take Penelope":
                 $ v0_penelope_concert = True
                 $ v0_aubrey_concert = False
-                
+
                 scene recap03_11 #v13s12b_8a.webp
                 with dissolve
 
@@ -102,7 +102,7 @@ label recap_end:
     with dissolve
 
     pause 1.5
-        
+
     scene recap03_12b #v14s10_5.webp
     with dissolve
 
@@ -110,6 +110,6 @@ label recap_end:
 
     if not is_CK2:
         jump v11s2
-    
+
     else:
         jump v1_start

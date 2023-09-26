@@ -71,7 +71,7 @@ label recap_emily_questions:
 
                 if not recap_first_run:
                     jump recap_girl_overview
-                    
+
                 else:
                     jump recap_aubrey_questions
 
@@ -86,15 +86,15 @@ label recap_emily_questions:
                 with dissolve
 
                 u "I guess I still had feelings for her, and the sex was always great, so why not?"
-                
+
                 if not is_CK2:
 
                     if not recap_first_run:
                         jump recap_girl_overview                        
-                    
+
                     else:
                         jump recap_aubrey_questions
-                
+
                 scene recap02_01e  # v6 s538s
                 with dissolve
 
@@ -177,7 +177,7 @@ label recap_emily_questions:
 
                 if not recap_first_run:
                     jump recap_girl_overview
-                    
+
     else: # Don't forgive her
         # Set variables here
         # Emily friend here
@@ -187,17 +187,17 @@ label recap_emily_questions:
         jump recap_girl_overview
 
 label recap_aubrey_questions:
-    
+
     hide screen phone_icon
 
     scene black
-    
+
     call screen recap_girl_summary("aubrey")
 
     if _return == "Be friends":
         # set variables here
         # Aubrey friend here
-        
+
         scene recap02_09    # v6 s571a
         with dissolve
 
@@ -205,7 +205,7 @@ label recap_aubrey_questions:
 
         scene recap02_09a    # v6 sufr3au2a
         with dissolve
-        
+
         u "I honestly preferred being friends without the benefits, at least for now."
 
         if not recap_first_run:
@@ -220,9 +220,9 @@ label recap_aubrey_questions:
 
         scene recap02_09b    # v3 anew8
         with dissolve        
-        
+
         u "That's the point of college, isn't it?"
-        
+
         scene recap02_09c    # v6 naub16a
         with dissolve
 
@@ -245,26 +245,26 @@ label recap_aubrey_questions:
 
         scene recap02_09g    # v11auanTPP1Start
         with dissolve
-        
+
         u "Having sex with hot chicks? And Aubrey was definitely hot."
-    
+
         scene recap02_09y
         with dissolve
 
         pause 1.25
-        
+
         scene recap02_09x
         with dissolve
-        
+
         pause 1.25
-        
+
         scene recap02_09w
         with dissolve
-    
+
         u "Aubrey never thought of herself as the relationship type."
-    
+
         u "I thought I saw a romantic side in her but I didn't know if it would end well if I tried to push her in that direction."
-    
+
         menu:
             "Try being romantic":
                 $ v0s48_canoeing_as_date = True
@@ -273,12 +273,12 @@ label recap_aubrey_questions:
 
                 scene recap02_09u
                 with dissolve
-                
+
                 u "She didn't take it seriously at first."
 
                 scene recap02_09z
                 with dissolve
-                
+
                 u "Though as we became closer, she began to come around to the idea."
 
                 scene recap02_09t
@@ -291,19 +291,19 @@ label recap_aubrey_questions:
 
                 scene recap02_09v
                 with dissolve
-                
+
                 u "In the end, I didn't go for it. Our relationship wasn't very deep, but I liked what I had."
 
-    
+
     if not recap_first_run:
         jump recap_girl_overview
 
 label recap_lauren_questions:
-    
+
     hide screen phone_icon
-    
+
     scene black
-    
+
     call screen recap_girl_summary("lauren")
 
     if _return != "Be friends": #  Pursue a relationship
@@ -311,7 +311,7 @@ label recap_lauren_questions:
 
         scene recap02_04  # s87c
         with dissolve
-        
+
         u "The next day, I met up with her..."
 
         scene recap02_04a   # s88
@@ -382,7 +382,7 @@ label recap_lauren_questions:
                 with dissolve
 
                 u "I knew she was the right girl for me."
-        
+
         if CharacterService.is_fwb(aubrey):
             scene recap02_04k  # v11aub25
             with dissolve
@@ -398,7 +398,7 @@ label recap_lauren_questions:
             with dissolve
 
             u "and Aubrey wanted me to join her in the bathroom..."
-            
+
             scene recap02_04n  # v11aub8a
             with dissolve
 
@@ -428,7 +428,7 @@ label recap_lauren_questions:
 
                     scene recap02_04r   # v11aub17c
                     with dissolve
-                    
+
                     pause 1.25
 
                     scene recap02_04s   # v11aub17a
@@ -440,7 +440,7 @@ label recap_lauren_questions:
                         jump recap_girl_overview
                     else:
                         jump recap_autumn_questions
-                
+
                 "Don't have sex":
                     $ v0s13_rejected_aubrey = True
 
@@ -448,7 +448,7 @@ label recap_lauren_questions:
                     with dissolve
 
                     u "I didn't take her up on her offer. I'm not going to cheat on Lauren just like that!"
-        
+
         scene recap02_04u  # v12las15
         with dissolve
 
@@ -461,9 +461,9 @@ label recap_lauren_questions:
 
         scene recap02_04w  # v12las21
         with dissolve        
-        
+
         u "I had a really nice date with Lauren..."
-        
+
         scene recap02_04x  # v12las53
         with dissolve
 
@@ -485,12 +485,12 @@ label recap_lauren_questions:
                 with dissolve
 
                 u  "and was proved right."
-                
+
                 scene recap02_05  #  v12Laucgstart
                 with dissolve
 
                 u "It was slow and sensual..." 
-                
+
                 scene recap02_05a  # v12las65
                 with dissolve
 
@@ -527,7 +527,7 @@ label recap_autumn_questions:
         $ v0_visited_shelter = True
         $ v0_signs = True
         $ v0_protest = True
-        
+
         scene recap02_02  # v7 s722 
         with dissolve
 
@@ -537,10 +537,10 @@ label recap_autumn_questions:
         with dissolve
 
         u "It wasn't going to hurt anything by hanging out with her..."
-        
+
         scene recap02_02b # v7 sas12a 
         with dissolve
-        
+
         u "and it was actually quite fun getting to know her better and learning that she's into things like political activism."
 
     else: # Dont spend time with Autumn
@@ -548,14 +548,14 @@ label recap_autumn_questions:
         with dissolve
 
         u "Who's got time to waste on girls that require this much effort? I'll move on quickly, thanks!"
-    
+
     scene black
 
     if not recap_first_run:
         jump recap_girl_overview
 
 label recap_riley_questions:
-    
+
     hide screen phone_icon
 
     scene black
@@ -573,19 +573,19 @@ label recap_riley_questions:
 
         scene recap02_06    # v7 s710
         with dissolve
-        
+
         u  "We started hooking up..." 
-        
+
         scene recap02_06b    # v7 rivid8052
         with dissolve
 
         u "and the sex was great..." 
-        
+
         scene recap02_06c    # v8sopt25
         with dissolve        
 
         u "then later I found out that she's actually bisexual..."
-        
+
         scene recap02_06d    # v8sopt27b
         with dissolve
 
@@ -593,9 +593,9 @@ label recap_riley_questions:
 
         scene recap02_06e    # v11sub4
         with dissolve
-         
+
         u "She seemed to be hinting that she'd like some sexual experiences with other girls." 
-        
+
         scene recap02_06f    # v11ras3
         with dissolve
 
@@ -630,10 +630,10 @@ label recap_riley_questions:
                         jump recap_girl_overview
                     else:
                         jump recap_nora_questions                                
-    
+
         if CharacterService.is_fwb(aubrey):
             # Three some question
-            
+
             scene recap02_06h    # v13s33_8
             with dissolve
 
@@ -651,7 +651,7 @@ label recap_riley_questions:
 
             scene recap02_06k    # v13s62_3a
             with dissolve
-            
+
             menu:
                 "Have threesome":
                     # set variables here
@@ -687,7 +687,7 @@ label recap_riley_questions:
         jump recap_girl_overview
 
 label recap_nora_questions:
-    
+
     hide screen phone_icon
 
     scene black
@@ -696,12 +696,12 @@ label recap_nora_questions:
 
     if _return == "Don't flirt with her":
         # set variables here        
-        
+
         scene recap02_07    # v1  s55ch3
         with dissolve
 
         u "Yeah, actually, even if I am interested, there's no way I'm putting moves on a girl who already has a boyfriend."
-        
+
         scene recap02_07a    # v6 s520h
         with dissolve
 
@@ -712,12 +712,12 @@ label recap_nora_questions:
 
         scene recap02_07b    # v7 s702a
         with dissolve
-        
+
         u "It's just a harmless bit of flirting..."
-        
+
         scene recap02_07c    # v7 s702f
         with dissolve
-        
+
         u "and every girl appreciates it when a guy lets them know in the most subtle of ways that they're hot."
 
     # second question
@@ -752,12 +752,12 @@ label recap_nora_questions:
 
             scene recap02_07g    #  v8 v8shal3e
             with dissolve
-            
+
             u "In all honesty, I wasn't that bothered when it came down to it."
-            
+
             scene recap02_07h    #  v8 v8shal6
             with dissolve
-            
+
             u  "I'll just let nature take its course. What will be will be!"
 
     if not is_CK2:
@@ -765,7 +765,7 @@ label recap_nora_questions:
             jump recap_girl_overview
         else:
             jump recap_ms_rose_questions
-    
+
     # question 3
 
     scene recap02_07i    # v14s10_1
@@ -777,7 +777,7 @@ label recap_nora_questions:
     with dissolve
 
     u "Once we were in Europe, things between Nora and Chris were getting worse." 
-    
+
     scene recap02_07k    # v11bb3
     with dissolve
 
@@ -792,7 +792,7 @@ label recap_nora_questions:
     with dissolve
 
     pause 1.25
-    
+
     scene recap02_07n    # v11bb9b
     with dissolve
 
@@ -800,7 +800,7 @@ label recap_nora_questions:
 
     scene recap02_07o    # v11bb9c
     with dissolve
-    
+
     u "and there was the opportunity to move in for a kiss if I was interested in her, even though there was a huge risk involved and it might backfire."
 
     menu:
@@ -816,7 +816,7 @@ label recap_nora_questions:
             with dissolve
 
             u "Well that messed everything up!"
-            
+
             scene recap02_07q    # v11bb11a
             with dissolve
 
@@ -856,10 +856,10 @@ label recap_nora_questions:
             with dissolve
 
             u "We talked about the problems she was going through with Chris..."
-            
+
             scene recap02_07v    # v12nos4
             with dissolve
-            
+
             u "and she seemed to really appreciate being able to talk it all through with me."
 
             scene recap02_07w    # v12nos10
@@ -876,7 +876,7 @@ label recap_nora_questions:
             with dissolve
 
             pause 1.25
-            
+
             scene recap02_07y    # v12nos5
             with dissolve
 
@@ -909,7 +909,7 @@ label recap_nora_questions:
 
             scene recap02_08d    # v12nos27
             with dissolve
-            
+
             u "We ended up having some incredible sex! Sorry, Chris!"
 
 
@@ -917,7 +917,7 @@ label recap_nora_questions:
         jump recap_girl_overview
 
 label recap_ms_rose_questions:
-    
+
     hide screen phone_icon
 
     scene black
@@ -941,7 +941,7 @@ label recap_ms_rose_questions:
     elif _return == "Be friends":
         # set variables here
         # msrose friend here
-        
+
         scene recap02_03  # v1 s84
         with dissolve
 
@@ -982,7 +982,7 @@ label recap_ms_rose_questions:
                 scene recap02_03e # v11src1a 
 
                 u "On our Europe trip, the chance came up again."
-                
+
                 scene recap02_03f  # v11ros2g  
                 with dissolve
 
@@ -992,7 +992,7 @@ label recap_ms_rose_questions:
                 with dissolve
 
                 menu:
-                    
+
                     "Kiss her again":
                         # set variables here
                         $ CharacterService.set_relationship(ms_rose, Relationship.FWB)
@@ -1040,12 +1040,12 @@ label recap_ms_rose_questions:
                 with dissolve
 
                 u "Yeah, on second thoughts, I figured it would be best to stay out of that one."
-    
+
     if not recap_first_run:
         jump recap_girl_overview
 
 label recap_chloe_questions:
-    
+
     hide screen phone_icon
 
     scene black
@@ -1061,24 +1061,24 @@ label recap_chloe_questions:
         with dissolve
 
         u " It was more of a friend vibe for me really..."
-        
+
         scene recap02_10a    # v7 sfr4cl18
         with dissolve
-        
+
         u "and to be honest, I found at least one other girl more interesting and worthy of my time."
 
-        
+
         if not recap_first_run:
             jump recap_girl_overview
         else:
             jump recap_penelope_questions
-    
-    
+
+
     else: # Pursue a relationship
         # set variables here
         $ v0_hc_girl = "chloe"
         $ CharacterService.set_relationship(chloe, Relationship.GIRLFRIEND)       
-        
+
         scene recap02_10b    # v3 s204
         with dissolve
 
@@ -1086,14 +1086,14 @@ label recap_chloe_questions:
 
         scene recap02_10c    # v6 sfr3cl1a
         with dissolve
-        
+
         pause 1.25
 
         scene recap02_10d    # v4 s370d
         with dissolve
-        
+
         u "I was expecting this to be hard work..."
-        
+
         scene recap02_10e    # v7 sfr4cl8
         with dissolve
 
@@ -1111,7 +1111,7 @@ label recap_chloe_questions:
 
         scene recap02_10h    # v11chcgStart
         with dissolve
-        
+
         u "but I figured the rewards would be more than worth it!"
 
     # second question
@@ -1130,7 +1130,7 @@ label recap_chloe_questions:
     with dissolve
 
     pause 1.25
-    
+
     scene recap02_10l    # v11car9a
     with dissolve
 
@@ -1154,7 +1154,7 @@ label recap_chloe_questions:
 
             scene recap02_10o    # v10chg10a
             with dissolve 
-            
+
             u "I've decided Chloe is the one for me, so I'm not going to let any sorority drama get in the way of that."
 
             if not is_CK2:
@@ -1179,17 +1179,17 @@ label recap_chloe_questions:
 
                 scene recap02_10q    # v6 sfr3cl4a
                 with dissolve
-                
+
                 u "Luckily, she came around and didn't stay angry for long." 
 
                 scene recap02_10r    # v8steak20
                 with dissolve
-                
+
                 u "We're all good now, and I've learnt to be more careful in future..." 
 
                 scene recap02_10s    # v12ncf9
                 with dissolve
-                
+
                 u "because Chloe really does have a bad temper when she's pissed!"                                
 
             else: # not popular       
@@ -1199,15 +1199,15 @@ label recap_chloe_questions:
                 with dissolve
 
                 u "I'm not sure if I'm ever going to recover from that." 
-                
+
                 scene recap02_10u    # s204a
                 with dissolve
 
                 u "She seemed to be considering my reputation all the time, whether I'm popular enough..." 
-                
+
                 scene recap02_10v    # v1 s112g
                 with dissolve
-                
+
                 u "And I think I've been relegated to the friend zone."
 
                 if not recap_first_run:
@@ -1219,7 +1219,7 @@ label recap_chloe_questions:
 
     scene recap02_10w    # v11cd20
     with dissolve
-    
+
     u "In Europe, I had the chance to take things a step further."
 
     scene recap02_10x    # v11cd31
@@ -1251,12 +1251,12 @@ label recap_chloe_questions:
 
             scene recap02_11b    # v11cd45
             with dissolve
-            
+
             u "I was now going out with the hottest girl on campus!"
 
         "Don't ask":
             # set variables here
- 
+
             scene recap02_11c    # v11cd30
             with dissolve
 
@@ -1264,14 +1264,14 @@ label recap_chloe_questions:
 
             scene recap02_11d    # v11cd46
             with dissolve
-            
+
             u "I didn't want to get tied into a proper full-on relationship with Chloe and that temper of hers!"
 
     if not recap_first_run:
         jump recap_girl_overview
 
 label recap_penelope_questions:
-    
+
     hide screen phone_icon
 
     scene black
@@ -1307,12 +1307,12 @@ label recap_penelope_questions:
 
     scene recap02_12c   # v4 s345f
     with dissolve
-    
+
     u "I bumped into her there and we started chatting." 
 
     scene recap02_12d   # v4 s350
     with dissolve
-    
+
     u "She's got such a beautiful smile."
 
     menu:
@@ -1323,12 +1323,12 @@ label recap_penelope_questions:
 
             scene recap02_12e   # s348b
             with dissolve
-            
+
             u "I pushed things too far too soon, and she left the café." 
-            
+
             scene recap02_12f   # s351
             with dissolve
-            
+
             u "Dammit! She seems like the forgiving type, but it looks like I'm friend zoned for now."
 
             if not is_CK2:
@@ -1340,7 +1340,7 @@ label recap_penelope_questions:
         "Ask her out":
             # set variables here
             # Penelope rs here 
-            
+
             scene recap02_12g   # s349b
             with dissolve
 
@@ -1353,7 +1353,7 @@ label recap_penelope_questions:
 
             scene recap02_12i   # s642
             with dissolve
-            
+
             pause 1.25
 
             scene recap02_12j   # s650
@@ -1363,17 +1363,17 @@ label recap_penelope_questions:
 
             scene recap02_12k   # s651
             with dissolve
-            
+
             u "Note to self: Don't go bowling with her again as she has the skills of a pro player..."
 
             scene recap02_12l   # s653
             with dissolve
-            
+
             u "and I'll lose every time!"
-            
+
             scene recap02_12m   # s658l
             with dissolve
-            
+
             u "We ended the date with a kiss and I was flying high!"
 
             if not is_CK2:
@@ -1396,12 +1396,12 @@ label recap_penelope_questions:
 
     scene recap02_12p   # v11coc16b
     with dissolve
-    
+
     u "I didn't really have any idea what I was doing..."
 
     scene recap02_12q   # v11coc16c
     with dissolve
-    
+
     u "and I suddenly had to figure out how to behave like a professional lawyer type person."
 
     menu:
@@ -1414,12 +1414,12 @@ label recap_penelope_questions:
 
             scene recap02_12q   
             with dissolve
-            
+
             u "I defended Penelope's actions and told the truth.."
-            
+
             scene recap02_12r   # v11coc18
             with dissolve
-            
+
             u "but also used the lack of concrete facts to poke holes in their accusations against her."
 
             scene recap02_12s   # v11coc25a
@@ -1434,12 +1434,12 @@ label recap_penelope_questions:
 
             scene recap02_12u   # v11coc27
             with dissolve
-            
+
             u "I guess I'd make a pretty good lawyer type person after all!"
 
             scene recap02_12v   # v11amp9b
             with dissolve
-            
+
             u "Another bonus was the Penelope could come on the Europe trip!"
 
         "Lie and use diversion tatics":
@@ -1453,9 +1453,9 @@ label recap_penelope_questions:
 
             scene recap02_12w   # v11coc24f
             with dissolve
-            
+
             u "I did my best to get them to drop the charge, but they found her guilty!"
-            
+
             scene recap02_12x   # v11coc24a
             with dissolve
 
@@ -1470,7 +1470,7 @@ label recap_penelope_questions:
         jump recap_girl_overview
 
 label recap_amber_questions:
-    
+
     hide screen phone_icon
 
     scene black
@@ -1512,7 +1512,7 @@ label recap_amber_questions:
         with dissolve
 
         pause 1.25
-        
+
         scene recap02_13d   # sfr4am3a
         with dissolve
 
@@ -1520,9 +1520,9 @@ label recap_amber_questions:
 
         scene recap02_13e   # v9jka2
         with dissolve
-        
+
         u "That's how she works and I've got no problem with that."
-        
+
         scene recap02_13f   # v8 cgt_00
         with dissolve
 
@@ -1540,7 +1540,7 @@ label recap_amber_questions:
 
         scene recap02_13i   # v8samb13
         with dissolve
-        
+
         u "Though it was just going to be a friends-with-benefits type deal for the foreseeable future."
 
     else: # not popular
@@ -1556,7 +1556,7 @@ label recap_amber_questions:
         with dissolve
 
         u "The only way to get with Amber was by being popular." 
-        
+
         scene recap02_13l   # v2 sf1
         with dissolve        
 
@@ -1566,7 +1566,7 @@ label recap_amber_questions:
         with dissolve
 
         u "My reputation needed more work in order for that to happen." 
-        
+
         scene recap02_13n   # v10rva7
         with dissolve
 
@@ -1574,14 +1574,14 @@ label recap_amber_questions:
 
         scene recap02_13o   # v10rva10a
         with dissolve
-        
+
         u "She's a fun friend to have around anyway, and maybe I'll get another chance for something more in the future."
 
     if not recap_first_run:
         jump recap_girl_overview
 
 label recap_samantha_questions:
-    
+
     hide screen phone_icon
 
     scene black
@@ -1603,10 +1603,10 @@ label recap_samantha_questions:
         with dissolve
 
         u "Yeah, I wasn't going anywhere near Cameron's sister."
-        
+
         scene recap02_14a     # v10s25 v10skt8a
         with dissolve
-        
+
         u "He'd tear my arms off!"  
 
         if not recap_first_run:
@@ -1616,15 +1616,15 @@ label recap_samantha_questions:
 
     # Get Closer
     # set variables here 
-    
+
     scene recap02_14b     # v10s9 v10sraf7b
     with dissolve
-    
+
     u "I was totally playing with fire..."
-    
+
     scene recap02_14c     #  v11s28 v11sas20
     with dissolve
-    
+
     u "But she was hot!"
 
     # third question
@@ -1663,12 +1663,12 @@ label recap_samantha_questions:
     with dissolve
 
     u "We got to drinking one time and I saw first-hand how much of a lightweight she is with alcohol." 
-    
+
     scene recap02_14e     # v10s25a v10skt8a
     with dissolve
-    
+
     u "Cameron got really angry with me." 
-    
+
     scene recap02_14f     # v10s25a v10skt8c
     with dissolve
 
@@ -1680,9 +1680,9 @@ label recap_samantha_questions:
 
             scene recap02_14g     # v9s22 v9rwsa6e
             with dissolve
-            
+
             u "Probably not worth it." 
-            
+
             scene recap02_14h     #  v9rwsa4
             with dissolve
 
@@ -1693,7 +1693,7 @@ label recap_samantha_questions:
                     jump recap_girl_overview
                 else:
                     jump recap_lindsey_questions
-        
+
         "Pursue a relationship":
             # set variables here
             $ v1s53_kissed_samantha = True
@@ -1701,9 +1701,9 @@ label recap_samantha_questions:
 
             scene recap02_14i     # v9s24 v9wws3
             with dissolve
-            
+
             u "There was a connection between us and I don't care what Cameron thinks about that." 
-            
+
             scene recap02_14j     # v11 s28a v11sas21
             with dissolve
 
@@ -1756,24 +1756,24 @@ label recap_samantha_questions:
 
             scene recap02_14s     # v13s31_16
             with dissolve
-            
+
             u "But then I found out she ended up in hospital after going off on her own and taking drugs with random people!" 
-            
+
             scene recap02_14t     # v13s31_100
             with dissolve
 
             u "Cameron came to find me and looked like he was going to rip my head off..." 
-            
+
             scene recap02_14u     # v13s31_14
             with dissolve
-            
+
             u "but then he realized I had tried to help her and he really appreciated it."
 
     if not recap_first_run:
         jump recap_girl_overview
 
 label recap_lindsey_questions:
-    
+
     hide screen phone_icon
 
     scene black
@@ -1788,7 +1788,7 @@ label recap_lindsey_questions:
             jump recap_girl_overview
         else:
             jump recap_jenny_questions
-    
+
     # Go see her
 
     # second question
@@ -1809,9 +1809,9 @@ label recap_lindsey_questions:
 
             scene recap02_15b    # v9s39 v9linksStart
             with dissolve
-            
+
             u "She's hot, so of course I wanted to seal the deal before heading off to the tournament." 
-            
+
             scene recap02_15c    # v9s39 v9hwl7
             with dissolve
 
@@ -1832,9 +1832,9 @@ label recap_lindsey_questions:
 
             scene recap02_15e    # v9s39 v9hwl7b
             with dissolve
-            
+
             u "I came to talk to her as friends, and that's how I wanted to leave it, at least for now."
-            
+
             scene recap02_15f    # v9s39 v9hwl14
             with dissolve
 
@@ -1849,7 +1849,7 @@ label recap_lindsey_questions:
 
     scene recap02_15g    # v12s17   v12esr26
     with dissolve
-    
+
     u "That time finally came when we went to Europe."
 
     scene recap02_15h    # v12s17 v12esr30
@@ -1890,7 +1890,7 @@ label recap_lindsey_questions:
 
             scene recap02_15n    # v12esr47
             with dissolve
-            
+
             u "Well, we both got a treat that day!"
 
 
@@ -1907,7 +1907,7 @@ label recap_lindsey_questions:
         jump recap_girl_overview
 
 label recap_jenny_questions:
-    
+
     hide screen phone_icon
 
     scene black
@@ -1920,13 +1920,13 @@ label recap_jenny_questions:
     # this is the end of the first run so turn it off
     if recap_first_run:
         $ recap_first_run = False
-        
+
 
 label recap_girl_overview:
-    
+
     hide screen phone_icon
 
     scene black
-    
+
     call screen recap_girl_overview_screen()
-    
+
