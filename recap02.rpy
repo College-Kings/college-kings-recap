@@ -112,7 +112,7 @@ label recap_emily_questions:
                     "Have sex":
                         # Set variables for this decision here
                         # EmilyRS here
-                        $ viewed_scenes.add("v13_emily") 
+                        $ viewed_scenes.add(ViewedScene.CK1_V13_EMILY) 
 
                         hide screen phone_icon
 
