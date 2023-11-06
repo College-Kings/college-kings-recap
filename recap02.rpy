@@ -215,7 +215,7 @@ label recap_aubrey_questions:
 
     else: # Have Sex
         # set variables here
-        $ viewed_scenes.add("v11_aubrey")
+        $ viewed_scenes.add(ViewedScene.CK1_V11_AUBREY)
         $ CharacterService.set_relationship(aubrey, Relationship.FWB)
 
         scene recap02_09b    # v3 anew8
@@ -407,7 +407,7 @@ label recap_lauren_questions:
             menu:
                 "Sex with Aubrey":
                     # Set variables here                   
-                    $ viewed_scenes.add("v11_aubrey")
+                    $ viewed_scenes.add(ViewedScene.CK1_V11_AUBREY)
                     $ v0_lauren_caught_aubrey = True
                     $ CharacterService.set_relationship(lauren, Relationship.FRIEND)
 
@@ -474,7 +474,7 @@ label recap_lauren_questions:
             "Extra effort":
                 # set variables here
                 # lauren GF here
-                $ viewed_scenes.add("v12_lauren")
+                $ viewed_scenes.add(ViewedScene.V12_LAUREN)
 
                 scene recap02_04y  # v12las53a
                 with dissolve
@@ -657,7 +657,7 @@ label recap_riley_questions:
                     # set variables here
                     # riley rs here
                     $ recap_choose_threesome = True
-                    $ viewed_scenes.add("v14_threesome")
+                    $ viewed_scenes.add(ViewedScene.CK1_V14_THREESOME)
                     $ v0_threesomeending = True 
 
                     scene recap02_06l    # v14auridoStart
@@ -996,7 +996,7 @@ label recap_ms_rose_questions:
                     "Kiss her again":
                         # set variables here
                         $ CharacterService.set_relationship(ms_rose, Relationship.FWB)
-                        $ viewed_scenes.add("v12_rose")
+                        $ viewed_scenes.add(ViewedScene.CK1_V12_ROSE)
 
                         scene recap02_03h # v11roc6  Ms Rose and MC kissing in hallway with tongue
                         with dissolve
