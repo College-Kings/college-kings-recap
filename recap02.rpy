@@ -474,7 +474,7 @@ label recap_lauren_questions:
             "Extra effort":
                 # set variables here
                 # lauren GF here
-                $ viewed_scenes.add(ViewedScene.V12_LAUREN)
+                $ viewed_scenes.add(ViewedScene.CK1_V12_LAUREN)
 
                 scene recap02_04y  # v12las53a
                 with dissolve
