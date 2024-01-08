@@ -1757,7 +1757,7 @@ label recap_samantha_questions:
             scene recap02_14s     # v13s31_16
             with dissolve
 
-            u "But then I found out she ended up in hospital after going off on her own and taking drugs with random people!" 
+            u "But then I found out she ended up in the hospital after going off on her own and taking drugs with random people!" 
 
             scene recap02_14t     # v13s31_100
             with dissolve
