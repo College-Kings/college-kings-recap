@@ -40,7 +40,7 @@ image recap01_09e = "recap/images/recap01_09e.webp"
 image recap01_09f = "recap/images/recap01_09f.webp"
 image recap01_09g = "recap/images/recap01_09g.webp"
 image recap01_09h = "recap/images/recap01_09h.webp"
-image recap01_09i = "recap/images/recap01_09i.png"
+image recap01_09i = "recap/images/recap01_09i.webp"
 image recap01_5a = "recap/images/recap01_5a.webp"
 
 image recap02_01 = "recap/images/recap02_01.webp"
