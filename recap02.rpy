@@ -543,7 +543,7 @@ label recap_riley_questions:
                 else:
                     jump recap_nora_questions
 
-            "Contnue relationship":
+            "Continue relationship":
                 # set variables here
                 $ CharacterService.set_relationship(riley, Relationship.FWB)
 
