@@ -10,6 +10,7 @@
 #
 
 label recap_end:
+    play music track.exciting_2 fadein 2
 
     hide screen phone_icon
 
@@ -92,6 +93,8 @@ label recap_end:
     scene recap03_12b #v14s10_5.webp
     
     u "And then our Europe trip was over and it was time to fly home. It went by so fast but it's something I'll never forget!"
+
+    stop music fadeout 2
 
     if not is_CK2:
         jump v11_start

@@ -30,7 +30,8 @@
 # where the player can then see a summary of the girls and click on them to change their answers to the questions.
 #
 
-label recap_02: 
+label recap_02:
+    play music track.exciting_5 fadein 2
 
 label recap_emily_questions:
 
@@ -1682,10 +1683,11 @@ label recap_jenny_questions:
 
 
 label recap_girl_overview:
-
     hide screen phone_icon
 
     scene black
 
-    call screen recap_girl_overview_screen()
+    stop music fadeout 2
 
+    call screen recap_girl_overview_screen()
+    

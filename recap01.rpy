@@ -1,15 +1,8 @@
 # Copyright 2022 CrimsonSky Ltd, All Rights Reserved 
-#
-#
-#
-#
-#
-#
-#
-#
-#
+
 
 label recap_start:
+    play music track.exciting_3 fadein 2
 
     hide screen phone_icon
     # r1
@@ -247,4 +240,5 @@ label recap_start:
     
     u "I had to decide who to pursue."
 
+    stop music fadeout 2
     jump recap_02
