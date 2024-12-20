@@ -30,8 +30,7 @@ label recap_start:
     scene recap01_01f
         # r2 
 
-    # input Ask the player for their name 
-    $ name = renpy.input(_("What's your name?"), default=_("Alex")).strip() or _("Alex")
+    $ mc.name_input()
 
     "All of the sudden, I could be whoever I wanted to be..."
 
